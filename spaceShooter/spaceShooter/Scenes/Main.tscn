@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://b3xnlnvcef8c"]
+
+[ext_resource type="Script" uid="uid://jfmkgen1oyg" path="res://Scripts/Main.gd" id="1_r150o"]
+[ext_resource type="PackedScene" uid="uid://b6culji4mri" path="res://Scenes/Player.tscn" id="2_idj7w"]
+
+[node name="Main" type="Node2D" unique_id=2098278586]
+script = ExtResource("1_r150o")
+
+[node name="Player" parent="." unique_id=1161652164 instance=ExtResource("2_idj7w")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=153004883]
