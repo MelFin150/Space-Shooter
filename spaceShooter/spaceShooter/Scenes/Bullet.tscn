@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://sfbijsmp2kxa"]
+
+[ext_resource type="Texture2D" uid="uid://b6kr1207y2egu" path="res://Assets/Sprites/Bullet.png" id="1_vlxeq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ejmsa"]
+size = Vector2(14, 2)
+
+[node name="Bullet" type="Node2D" unique_id=1919359402]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1774243263]
+texture = ExtResource("1_vlxeq")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=579244316]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=527259546]
+shape = SubResource("RectangleShape2D_ejmsa")
